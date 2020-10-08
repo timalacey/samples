@@ -1,0 +1,341 @@
+{
+  "items": [
+    {
+      "name": "VOD (Static MPD)",
+      "submenu": [
+        {
+          "enabled": false,
+          "url": "https://dash.akamaized.net/dash264/TestCases/1a/sony/SNE_DASH_SD_CASE1A_REVISED.mpd",
+          "name": "SegmentBase, ondemand profile",
+          "provider": "dashif"
+        },
+        {
+          "url": "https://dash.akamaized.net/akamai/bbb_30fps/bbb_30fps.mpd",
+          "name": "SegmentTemplate/Number, live profile, 250kbps up to 15Mbps@4K.",
+          "provider": "dashif"
+        },
+        {
+          "enabled": false,
+          "url": "https://dash.akamaized.net/dash264/TestCases/2c/qualcomm/1/MultiResMPEG2.mpd",
+          "name": "SegmentTemplate/SegmentTimeline $time, ondemand profile",
+          "description": "has SegmentTimeline",
+          "provider": "dashif"
+        },
+        {
+          "url": "https://dash.akamaized.net/dash264/TestCases/5a/nomor/1.mpd",
+          "name": "Multiperiod, 2 periods, SegmentTemplate $number",
+          "provider": "dashif"
+        },
+        {
+          "url": "https://dash.akamaized.net/envivio/EnvivioDash3/manifest.mpd",
+          "name": "SegmentTemplate, live profile",
+          "provider": "envivio"
+        },
+        {
+          "url": "http://rdmedia.bbc.co.uk/dash/ondemand/testcard/1/client_manifest-events.mpd",
+          "name": "SegmentTemplate/Number, live profile",
+          "moreInfo": "http://rdmedia.bbc.co.uk/dash/ondemand/testcard/",
+          "provider": "bbc"
+        },
+        {
+          "name": "SegmentTemplate with SegmentTimeline",
+          "description": "has SegmentTimeline",
+          "url": "https://demo.unified-streaming.com/video/tears-of-steel/tears-of-steel.ism/.mpd",
+          "provider": "unified"
+        },
+        {
+          "name": "1080p without encryption",
+          "url": "https://media.axprod.net/TestVectors/v7-Clear/Manifest_1080p.mpd",
+          "moreInfo": "https://github.com/Axinom/dash-test-vectors",
+          "provider": "axinom"
+        },
+        {
+          "name": "2160p without encryption",
+          "url": "https://media.axprod.net/TestVectors/v7-Clear/Manifest.mpd",
+          "moreInfo": "https://github.com/Axinom/dash-test-vectors",
+          "provider": "axinom"
+        },
+        {
+          "name": "Multi-period 1080p without encryption",
+          "url": "https://media.axprod.net/TestVectors/v7-Clear/Manifest_MultiPeriod_1080p.mpd",
+          "moreInfo": "https://github.com/Axinom/dash-test-vectors",
+          "provider": "axinom"
+        },
+        {
+          "name": "Multi-period 2160p without encryption",
+          "url": "https://media.axprod.net/TestVectors/v7-Clear/Manifest_MultiPeriod.mpd",
+          "moreInfo": "https://github.com/Axinom/dash-test-vectors",
+          "provider": "axinom"
+        },
+        {
+          "name": "Complex multi-period with different content, clear",
+          "url": "https://media.axprod.net/TestVectors/v8-MultiContent/Clear/Manifest.mpd",
+          "moreInfo": "https://github.com/Axinom/dash-test-vectors",
+          "provider": "axinom"
+        },
+        {
+          "name": "4K SegmentBase ",
+          "url": "https://dash.akamaized.net/akamai/streamroot/050714/Spring_4Ktest.mpd",
+          "provider": "streamroot"
+        },
+        {
+          "name": "Clear Static SegmentTimeline",
+          "description": "has SegmentTimeline",
+          "url": "https://wowzaec2demo.streamlock.net/vod/_definst_/ElephantsDream/smil:ElephantsDream.smil/manifest_mvtime.mpd",
+          "provider": "wowza"
+        },
+        {
+          "name": "Clear Static SegmentTemplate",
+          "url": "https://wowzaec2demo.streamlock.net/vod/_definst_/ElephantsDream/smil:ElephantsDream.smil/manifest_mvnumber.mpd",
+          "provider": "wowza"
+        },
+        {
+          "name": "Clear Static SegmentList",
+          "url": "https://wowzaec2demo.streamlock.net/vod/_definst_/ElephantsDream/smil:ElephantsDream.smil/manifest_mvlist.mpd",
+          "provider": "wowza"
+        }
+      ]
+    },
+    {
+      "name": "LIVE (Dynamic MPD)",
+      "submenu": [
+        {
+          "url": "https://livesim.dashif.org/livesim/testpic_2s/Manifest.mpd",
+          "name": "SegmentTemplate without manifest updates (livesim)",
+          "provider": "dashif"
+        },
+        {
+          "url": "https://livesim.dashif.org/livesim/mup_30/testpic_2s/Manifest.mpd",
+          "name": "SegmentTemplate with manifest updates every 30s (livesim)",
+          "provider": "dashif"
+        },
+        {
+          "url": "https://livesim.dashif.org/livesim/segtimeline_1/testpic_2s/Manifest.mpd",
+          "name": "SegmentTimeline (livesim)",
+          "description": "has SegmentTimeline",
+          "provider": "dashif"
+        },
+        {
+          "url": "https://livesim.dashif.org/livesim/periods_60/continuous_1/testpic_2s/Manifest.mpd",
+          "name": "Multiperiod SegmentTemplate. New period every minute (livesim)",
+          "provider": "dashif"
+        },
+        {
+          "url": " https://livesim.dashif.org/livesim/ato_10/testpic_2s/Manifest.mpd",
+          "name": "10 seconds availabilityTimeOffset (livesim)",
+          "provider": "dashif"
+        },
+        {
+          "url": "https://livesim.dashif.org/livesim/ato_inf/testpic_2s/Manifest.mpd",
+          "name": "Infinite offset - all segments available at availability start (livesim)",
+          "provider": "dashif"
+        },
+        {
+          "url": "https://live.unified-streaming.com/scte35/scte35.isml/.mpd",
+          "name": "Unified Streaming reference stream with scte35 markers",
+          "moreInfo": "http://demo.unified-streaming.com/features.html",
+          "provider": "unified"
+        },
+        {
+          "name": "Clear Dynamic SegmentTimeline",
+          "description": "has SegmentTimeline",
+          "url": "https://wowzaec2demo.streamlock.net/live/bigbuckbunny/manifest_mvtime.mpd",
+          "provider": "wowza"
+        },
+        {
+          "name": "Clear Dynamic SegmentTemplate",
+          "url": "https://wowzaec2demo.streamlock.net/live/bigbuckbunny/manifest_mvnumber.mpd",
+          "provider": "wowza"
+        },
+        {
+          "name": "Clear Dynamic SegmentList",
+          "url": "https://wowzaec2demo.streamlock.net/live/bigbuckbunny/manifest_mvlist.mpd",
+          "provider": "wowza"
+        },
+        {
+          "name": "Multiperiod SegmentTimeline/$Time$, full manifest. 31s ad pod every 3 minutes",
+          "description": "has SegmentTimeline",
+          "url": "https://d24rwxnt7vw9qb.cloudfront.net/v1/dash/e6d234965645b411ad572802b6c9d5a10799c9c1/All_Reference_Streams/6ba06d17f65b4e1cbd1238eaa05c02c1/index.mpd",
+          "provider": "aws"
+        },
+        {
+          "name": "Multiperiod SegmentTimeline/$Time$, compact manifest. 31s ad pod every 3 minutes",
+          "description": "has SegmentTimeline",
+          "url": "https://d24rwxnt7vw9qb.cloudfront.net/v1/dash/e6d234965645b411ad572802b6c9d5a10799c9c1/All_Reference_Streams/91d37b0389de47e0b5266736d3633077/index.mpd",
+          "provider": "aws"
+        },
+        {
+          "name": "Multiperiod SegmentTimeline/$Number$, full manifest. 31s ad pod every 3 minutes",
+          "description": "has SegmentTimeline",
+          "url": "https://d24rwxnt7vw9qb.cloudfront.net/v1/dash/e6d234965645b411ad572802b6c9d5a10799c9c1/All_Reference_Streams/ee565ea510cb4b4d8df5f48918c3d6dc/index.mpd",
+          "provider": "aws"
+        },
+        {
+          "name": " Multiperiod SegmentTimeline/$Number$, compact manifest. 31s ad pod every 3 minutes",
+          "description": "has SegmentTimeline",
+          "url": "https://d24rwxnt7vw9qb.cloudfront.net/v1/dash/e6d234965645b411ad572802b6c9d5a10799c9c1/All_Reference_Streams/4577dca5f8a44756875ab5cc913cd1f1/index.mpd",
+          "provider": "aws"
+        }
+      ]
+    },
+    {
+      "name": "Subtitles and Captions",
+      "submenu": [
+        {
+          "url": "https://dash.akamaized.net/akamai/test/caption_test/ElephantsDream/elephants_dream_480p_heaac5_1.mpd",
+          "name": "External VTT subtitle file",
+          "provider": "dashif"
+        },
+        {
+          "name": "TTML Segmented Subtitles VoD",
+          "url": "https://livesim.dashif.org/dash/vod/testpic_2s/multi_subs.mpd",
+          "provider": "dashif"
+        },
+        {
+          "name": "TTML Segmented Subtitles Live (livesim)",
+          "url": "https://livesim.dashif.org/livesim/testpic_2s/multi_subs.mpd",
+          "provider": "dashif"
+        },
+        {
+          "name": "TTML Sideloaded XML Subtitles",
+          "url": "https://livesim.dashif.org/dash/vod/testpic_2s/xml_subs.mpd",
+          "provider": "dashif"
+        },
+        {
+          "name": "Embedded CEA-608 Closed Captions",
+          "url": "https://livesim.dashif.org/dash/vod/testpic_2s/cea608.mpd",
+          "provider": "dashif"
+        },
+        {
+          "name": "Embedded CEA-608 Closed Captions (livesim)",
+          "url": "https://livesim.dashif.org/livesim/testpic_2s/cea608.mpd",
+          "provider": "dashif"
+        },
+        {
+          "name": "Embedded CEA-608 Closed Captions and TTML segments VoD",
+          "url": "https://livesim.dashif.org/dash/vod/testpic_2s/cea608_and_segs.mpd",
+          "provider": "dashif"
+        },
+        {
+          "name": "Embedded CEA-608 Closed Captions and TTML segments Live (livesim)",
+          "url": "https://livesim.dashif.org/livesim/testpic_2s/cea608_and_segs.mpd",
+          "provider": "dashif"
+        },
+        {
+          "url": "https://livesim.dashif.org/dash/vod/testpic_2s/imsc1_img.mpd",
+          "name": "IMSC1 (CMAF) Image Subtitles",
+          "moreInfo": "https://livesim.dashif.org/dash/vod/testpic_2s/imsc1_img_subs_info.html",
+          "provider": "dashif"
+        },
+        {
+          "name": "TTML Image Subtitles embedded (VoD)",
+          "url": "https://livesim.dashif.org/dash/vod/testpic_2s/img_subs.mpd",
+          "moreInfo": "https://livesim.dashif.org/dash/vod/testpic_2s/img_subs_info.html",
+          "provider": "dashif"
+        },
+        {
+          "name": "TTML Segmented 'snaking' subtitles (with random text) (Ondemand)",
+          "url": "http://rdmedia.bbc.co.uk/dash/ondemand/elephants_dream/1/client_manifest-snake.mpd",
+          "moreInfo": "http://rdmedia.bbc.co.uk/dash/ondemand/elephants_dream/",
+          "provider": "bbc"
+        },
+        {
+          "name": "BBC R&D EBU-TT-D Subtitling Test",
+          "url": "http://rdmedia.bbc.co.uk/dash/ondemand/elephants_dream/1/client_manifest-all.mpd",
+          "moreInfo": "http://rdmedia.bbc.co.uk/dash/ondemand/elephants_dream/",
+          "provider": "bbc"
+        },
+        {
+          "url": "https://dash.akamaized.net/dash264/CTA/imsc1/IT1-20171027_dash.mpd",
+          "name": "IMSC1 Text Subtitles via sidecar file",
+          "provider": "cta"
+        }
+      ]
+    },
+    {
+      "name": "Thumbnails",
+      "submenu": [
+        {
+          "name": "Single adaption set, 7 tiles at 10x1, each thumb 320x180",
+          "url": "https://dash.akamaized.net/akamai/bbb_30fps/bbb_with_tiled_thumbnails.mpd",
+          "provider": "dashif"
+        },
+        {
+          "name": "Single adaption set, 4 tiles at 10x1, each thumb 205x115",
+          "url": "https://dash.akamaized.net/akamai/bbb_30fps/bbb_with_4_tiles_thumbnails.mpd",
+          "provider": "dashif"
+        },
+        {
+          "name": "Single adaption set, 1 tile at 10x20, each thumb 102x58",
+          "url": "https://dash.akamaized.net/akamai/bbb_30fps/bbb_with_tiled_thumbnails_2.mpd",
+          "provider": "dashif"
+        },
+        {
+          "name": "Two adaption sets with different thumb resolutions",
+          "url": "https://dash.akamaized.net/akamai/bbb_30fps/bbb_with_multiple_tiled_thumbnails.mpd",
+          "provider": "dashif"
+        },
+        {
+          "name": "Live stream, Single adaptation set, 1x1 tiles (livesim)",
+          "url": "https://livesim.dashif.org/livesim/testpic_2s/Manifest_thumbs.mpd",
+          "provider": "dashif"
+        },
+        {
+          "name": "SegmentBase, Single adaption set, 3x4 tiles",
+          "url": "https://demo.unified-streaming.com/video/tears-of-steel/tears-of-steel-tiled-thumbnails-static.mpd",
+          "provider": "unified"
+        },
+        {
+          "name": "SegmentTemplate with SegmentTimeline",
+          "description": "has SegmentTimeline",
+          "url": "https://demo.unified-streaming.com/video/tears-of-steel/tears-of-steel-tiled-thumbnails-timeline.ism/.mpd",
+          "provider": "unified"
+        },
+        {
+          "name": "SegmentNumber",
+          "url": "https://demo.unified-streaming.com/video/tears-of-steel/tears-of-steel-tiled-thumbnails-numbered.ism/.mpd",
+          "provider": "unified"
+        }
+      ]
+    },
+    {
+      "name": "Audio-only",
+      "submenu": [
+        {
+          "name": "48k AAC-LC Stereo Beeps (Live)",
+          "url": "https://livesim.dashif.org/livesim/testpic_2s/audio.mpd",
+          "provider": "dashif"
+        },
+        {
+          "name": "48k AAC-LC Stereo Beeps (Ondemand)",
+          "url": "https://livesim.dashif.org/dash/vod/testpic_2s/audio.mpd",
+          "provider": "dashif"
+        },
+        {
+          "name": "128k AAC-LC Stereo 1kHz Tone (Ondemand)",
+          "url": "http://rdmedia.bbc.co.uk/dash/ondemand/testcard/1/client_manifest-audio-1kHz.mpd",
+          "moreInfo": "http://rdmedia.bbc.co.uk/dash/ondemand/testcard/",
+          "provider": "bbc"
+        },
+        {
+          "name": "128k/320k AAC-LC Stereo/5.1 'Testcard' (Ondemand)",
+          "url": "http://rdmedia.bbc.co.uk/dash/ondemand/testcard/1/client_manifest-audio.mpd",
+          "moreInfo": "http://rdmedia.bbc.co.uk/dash/ondemand/testcard/",
+          "provider": "bbc"
+        },
+        {
+          "name": "Audio without encryption",
+          "url": "https://media.axprod.net/TestVectors/v7-Clear/Manifest_AudioOnly.mpd",
+          "moreInfo": "https://github.com/Axinom/dash-test-vectors",
+          "provider": "axinom"
+        },
+        {
+          "name": "Multi-period audio without encryption",
+          "url": "https://media.axprod.net/TestVectors/v7-Clear/Manifest_MultiPeriod_AudioOnly.mpd",
+          "moreInfo": "https://github.com/Axinom/dash-test-vectors",
+          "provider": "axinom"
+        }
+      ]
+    }
+  ]
+}
